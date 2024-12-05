@@ -1,0 +1,9 @@
+<h2>todolist works!</h2>
+
+<ol>
+    @for(todo of todo$ |async ;track $index)
+    {
+      <li>{{ todo.title }}</li>
+
+    }
+</ol>

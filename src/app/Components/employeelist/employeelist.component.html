@@ -1,0 +1,14 @@
+<p>employeelist works!</p>
+<table class="table table bordered">
+    @for(emp of employees$ |async; track $index)
+    {
+        <tr>
+            <td> {{emp.eid}}           </td>
+            <td> {{emp.name}}           </td>
+            <td> {{emp.sal}}           </td>
+            <td> {{emp.gender}}           </td>
+            <td> {{emp.id}}           </td>
+        </tr>
+
+    }
+</table>
