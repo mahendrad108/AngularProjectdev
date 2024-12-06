@@ -1,0 +1,32 @@
+<p>employee works!</p>
+
+<div>
+    <table border="2">
+        
+        <thead>
+            <tr>
+            <th>Id</th>
+            <th>FullName</th>
+            <th>Salary</th>
+            <th>gender</th>
+            <th>empid</th>           
+        </tr>
+        </thead>
+    
+        <tbody>
+        
+            @for(emp of employees;track $index)
+            {
+                <tr>
+<td>{{emp.id}}</td>
+<td>{{emp.getfullName()}}</td>  
+<td>{{emp.sal}}</td>
+<td>{{emp.gender}} </td>
+<td>{{emp.sal}}</td>
+                </tr>
+            }
+    </tbody>
+    </table>
+   
+    
+</div>
